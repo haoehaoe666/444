@@ -94,7 +94,7 @@ def main(users, action=False):
     # 3. 第三步：进入精准等待循环
     logging.info("=== 阶段 2：时间校验与阻塞等待 ===")
     now = get_bj_datetime(action)
-    target_start = now.replace(hour=19, minute=59, second=59, microsecond=0)
+    target_start = now.replace(hour=20, minute=0, second=0, microsecond=0)
     target_end = now.replace(hour=20, minute=1, second=0, microsecond=0)
     
     run_once = False
